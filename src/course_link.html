@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Tutorial</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="stylesheet" href="./mobile-style.css">
+</head>
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="Index.html">
+          <i class="fab fa-html5 fa-2x mx-3"></i>HTML5</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Index.html">HOME
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">HISTORY</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="course.html">COURSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about us.html">ABOUT US</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+        <h1><strong>Modul Pembelajaran HTML5</strong></h1>
+        <div class="row">
+        <div class="list-modul">
+          <h2>List Modul</h2>
+          <table>
+            <tr>
+              <td><a href="course.html">HTML Table</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Tag HTML</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Elemen HTML</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Tag HTML</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">HTML Heading</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">HTML Paragraf & Break Line</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">HTML Text Formatting, Symbol</a></td>
+            </tr>
+            <tr>
+              <td><a href="course_link.html">HTML Link</a></td>
+            </tr>
+            <tr>
+              <td><a href="course_list.html">HTML List</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">HTML Image</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">HTML Frame</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">HTML Form</a></td>
+            </tr>
+          </table>
+      </div>
+      <div class="content">
+        <div id="table">
+            <h2>Belajar HTML: Cara Membuat Link untuk Menghubungkan Halaman</h2>
+            <div class="blog3">
+            <p>
+              <br> Link adalah elemen html yang berfungsi menghubungkan suatu halaman web ke halaman web yang lain. <br>
+              Link dibagi menjadi dua:
+              <ol>
+                <li><b>Internal Link</b>: adalah link yang menuju ke domain web itu sendiri</li>
+                <li><b>Eksternal Link</b>: adalah link yang menuju domain lain</li>
+              </ol>
+              Contoh internal link:<br>
+              <div class="gambar1" style="text-align: center">
+                <img src="../assets/internal-link.png">
+              </div>
+              <br>Contoh eksternal link:<br>
+              <div class="gambar2" style="text-align: center">
+                <img src="../assets/eksternal-link.png">
+              </div>
+              <br>
+              <h3>Cara Membuat Link di HTML</h3>
+              Link di HTML dapat dibuat dengan tag <code>&lta&gt</code> lalu diberikan atribut href untuk menentukan alamat yang akan dituju.<br>
+              Contoh:
+              <pre>
+                  &lt;a href="about.html"&gt;About&lt;/a&gt;
+              </pre>
+              Artinya, link akan menuju ke halaman About yang berada di dalam file about.html.<br>
+              Ini adalah contoh untuk internal link. Lalu bagaimana kalau ekternal?<br>
+              Kita tinggal masukkan alamat URL-nya seperti ini:
+              <pre>
+                <code>
+                  &lt;a href="https://www.w3schools.com"&gt;W3SCHOOLS&lt;/a&gt;
+                </code>
+              </pre>
+              Maka saat link tersebut diklik, kita akan membuka halaman<br>
+              <a href="https://www.w3schools.com">www.w3schools.com</a><br>
+              <br>
+              <h3>Atribut-attribut Link</h3>
+              Selain atribut href terdapat juga atribut yang lain seperti target, title, rel, dan lain-lain.<br>
+              <br><h4>Menggunakan Atribut Target</h4>
+              Atribut ini berfungsi untuk memberi tahu link, target membukanya ke mana. Misalkan targetnya adalah di jendela baru atau tab baru, maka atribut target harus diisi dengan <code>blank</code> atau <code>_blank</code>.<br>
+              Contoh:
+              <pre>
+                &lt;a href="https://www.w3schools.com" target="blank"&gt;www.w3schools.com&lt;/a&gt;
+              </pre>
+              Selain itu atribut ini dapat juga di isi dengan <code>_parent</code>, <code>_self</code>,<code> _top</code> dan nama sebuah frame.<br>
+              Contoh:
+              <pre>
+                &lt;a href="https://www.w3schools.com" target="tampil"&gt;Sebuah Link&lt;/a&gt;
+                &lt;iframe name="tampil"&gt;
+                &lt;/iframe&gt;
+              </pre>
+              Hasilnya, link akan dibuka di dalam elemen frame yang memiliki atribut <code>name="tampil"</code>.<br>
+                <a href="https://www.google.com" target="tampil">Sebuah Link</a>
+                <iframe name="tampil">
+                </iframe>
+              <br>
+              <br>
+              <h4>Menggunakan Atribut Tittle</h4>
+              Atribut ini berfungsi untuk membuat tooltips. Tooltips adalah informasi tambahan yang akan tampil saat link disentuh pointer.<br>
+              Contoh:
+              <pre>
+                &lt;a href="mailto:iqbalbahtiar@student.undip.ac.id" title="kirim email ke Admin"&gt;Hubungi Saya&lt;/a&gt;
+              </pre>
+              Link di atas akan memanggil aplikasi mail client, karena kita mengisi nilai <code>href</code> dengan <code>mailto:iqbalbahtiar@student.undip.ac.id</code>.<br>
+              Hasilnya: 
+              <a href="mailto:iqbalbahtiar@student.undip.ac.id" title="kirim email ke Admin">Hubungi Admin</a>
+              <br>
+              <br>
+              <h2>Membuat Link Buntu</h2>
+              Link buntu biasanya tidak bisa diklik, atau link itu tidak akan menuju ke mana-mana.
+              <br>
+              Cara membuat link ini, kita cukup mengisi atribut <code>href</code> dengan tanda pagar (<code>#</code>) atau tanda pagar dan tanda seru (<code>#!</code>).
+              <br>
+              Contoh:
+              <pre>
+                &lt;a href="#"&gt;Link Buntu&lt;/a&gt;
+                &lt;a href="#!"&gt;Link Buntu 2&lt;/a&gt;
+              </pre>
+              Sebenarnya maksud dari tnda pagar di dalam atribut <code>href</code> adalah dia akan menuju pada elemen dengan id tertentu.
+              <br>
+              Misalnya kita ingin menju ke halaman paling atas, maka link-nya akan seperti ini:
+              <pre>
+                &lt;a href="#top"&gt;Ke Atas!&lt;a&gt;
+              </pre>
+              Hasilnya:
+              <a href="#top">Ke Atas!<a>
+              <br>
+              <br>
+              Nilai <code>#top</code> adalah nilai untuk menuju ke halman atas halaman.<br>
+              <br>
+              <h2>Membuat Link untuk Memanggil Fungsi Javascript</h2>
+              Salah satu penggunaan Link adalah untuk memanggil fungsi Javascript. Biasanya nama fungsi javascript di tambahkan pada atribut onclick dan href.<br>
+              Contoh:
+              <pre>
+                &lt;a href="javascript:alert('Helloo!!')"&gt;Klik1&lt;/a&gt;
+                &lt;a href="#!" onclick="alert('BACOT!!')"&gt;Klik2&lt;/a&gt;
+              </pre>
+              Hasilnya: 
+              <a href="javascript:alert('Helloo!!')">Klik1</a>
+              |
+              <a href="#!" onclick="alert('HAMBOHHHH')">Klik2</a>
+              <br>
+              <br>
+            </p>
+              
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-center">
+        <div class="col-md-5 col-sm-5 mx-auto">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">Kami Kelompok 4 - OTW karena "Alon-alon Asal Kelakon"</p>
+          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | Made With Love ❤️</p>
+        </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
