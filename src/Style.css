@@ -61,6 +61,7 @@ header .row .col-md-5 img {
 
 header {
   background: var(--bggradient);
+  background-position: center;
 }
 
 header .container .col-md-7 {
