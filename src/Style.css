@@ -87,7 +87,8 @@ header .container .col-md-7 p {
   font-weight: bold;
 }
 
-.history > h1 {
+h1 {
+  text-align: center;
   padding-top: 5vmin;
   padding-bottom: 0.1em;
   font-family: var(--Rubik);
@@ -113,3 +114,63 @@ footer {
 footer p > span {
   color: #ff512f;
 }
+
+
+.list-modul{
+  margin: 50px 0px;
+  padding: 10px;
+  width: 300px;
+  height: 500px;
+  overflow: auto;
+}
+
+.list-modul h2{
+  font-family: var(--Rubik), sans-serif; 
+  font-size: 30px;
+  margin: 20px 5px;
+}
+
+.list-modul table{
+  width: 100%;
+}
+
+.list-modul tr,td{
+  font-family: var(--Rubik), sans-serif;
+  padding: 10px 5px;
+  border-collapse: collapse;
+  border : 0.5px solid grey;
+  border-style: none none solid none;
+}
+
+.list-modul a:link{
+  text-decoration: none;
+  color: black;
+}
+
+.list-modul a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.list-modul a:active{
+  text-decoration: bold;
+  color: black;
+}
+
+.content{
+  margin: 50px;
+  width: 50%;
+  height: 100%;
+}
+
+.content h2{
+  font-family: var(--Rubik), Helvitica, sans-serif;
+  font-size: 30px;
+}
+
+.content p{
+  font-family: var(--Rubik), Helvitica, sans-serif;
+  font-size: 16px;
+  text-align: justify;
+}
+
