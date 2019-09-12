@@ -144,12 +144,12 @@ footer p > span {
 
 .list-modul a:link{
   text-decoration: none;
-  color: black;
+  color: blue;
 }
 
-.list-modul a:link{
+.list-modul a:visited{
   text-decoration: none;
-  color: black;
+  color: blue;
 }
 
 .list-modul a:hover{
@@ -164,8 +164,9 @@ footer p > span {
 
 .content{
   margin: 50px;
-  width: 50%;
-  height: 100%;
+  width: 700px;
+  height: 600px;
+  overflow: auto;
 }
 
 .content img{
@@ -183,3 +184,20 @@ footer p > span {
   text-align: justify;
 }
 
+.now {
+  color: black;
+  font-weight: bold;
+}
+
+.card-deck {
+  padding-bottom: 5%;
+}
+
+.card-img-top {
+  height: 60%;
+  object-fit: cover;
+}
+
+.card-deck p {
+  font-size: 14px;
+}

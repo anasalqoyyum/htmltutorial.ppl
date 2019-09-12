@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Us</title>
+    <style>
+        main h2{
+          text-align: center;
+          color: white;
+          font-size: 56px;
+        }
 
+        .jumbotron{
+          background-image: url("../assets/team1.jpg");
+          background-size: 100%;
+          height: 30vh;
+        }
+
+        .card{
+          margin: 30px 20px;
+        }
+        
+        .card:hover{
+          transform: scale(1.1);
+        }
+
+        #cardview{
+          background-color: white;
+        }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -46,14 +70,53 @@
     </div>
   </header>
   <main>
-
+    <div class="jumbotron">
+      <div class="container">
+          <h2>About Us</h2>
+      </div>
+    </div>
+    <div class="card-deck mx-auto" style="width: 50%">
+        <div class="card">
+            <img class="card-img-top" src="../assets/Juan 3x4.jpg" alt="Card image Juan">
+            <div class="card-body">
+              <h5 class="card-title text-center">Juan T.R</h5>
+              <p class="card-text text-center">24060117140074</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../assets/Almamater.png" alt="Card image Anas">
+          <div class="card-body">
+            <h5 class="card-title text-center">M. Anas Alqoyyum</h5>
+            <p class="card-text text-center">24060117130082</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="../assets/ilman 3x4.png" alt="Card image ilman">
+          <div class="card-body">
+            <h5 class="card-title text-center">Ilman Nabil Shiddiq</h5>
+            <p class="card-text text-center">24060117140065</p>
+          </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image Iqbal">
+            <div class="card-body">
+              <h5 class="card-title text-center">M. N. Iqbal Bahtiar</h5>
+              <p class="card-text text-center">240601171300</p>            
+            </div>
+          </div>
+          <div class="card">
+              <img class="card-img-top" src="..." alt="Card image Ikhsan">
+              <div class="card-body">
+                <h5 class="card-title text-center">Ikhsan Nurrahman</h5>
+                <p class="card-text text-center">240601171400</p>
+              </div>
+            </div>
+      </div>      
   </main>
   <footer>
     <div class="container-fluid p-0">
       <div class="row text-center">
         <div class="col-md-5 col-sm-5 mx-auto">
-          <h4 class="text-light">About us</h4>
-          <p class="text-muted">Kami Kelompok 4 - OTW karena "Alon-alon Asal Kelakon"</p>
           <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | Made With Love ❤️</p>
         </div>
   </footer>
